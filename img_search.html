@@ -3,16 +3,23 @@
     <head>
         <title>Search</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
-        <div class="topnav">
-            <a href="index.html">Google Search</a>
-            <a class="active" href="img_search.html">Image Search</a>
-            <a href="adv_search.html">Advanced Search</a>
-          </div>
+        <div id="nav-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
+
         <form method="get" action="http://images.google.com/images">
             <input type="text" name="q" />
             <input type="submit" value="Search Google Images" />
         </form>
+
     </body>
 </html>

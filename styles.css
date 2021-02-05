@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
 .search {
     width: 65%;
     margin: auto;
@@ -30,6 +32,8 @@ input:hover {
 
 .topnav {
     overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .topnav img,a {
@@ -42,6 +46,15 @@ input:hover {
 
   .topnav-right {
       float: right;
+  }
+
+  .google {
+      color: #4285F4;
+      text-align: center;
+      width:75px;
+      padding:10px;
+      margin-top: 11px;
+      ;
   }
 
   a:link {

@@ -4,6 +4,7 @@
         <title>Search</title>
         <link rel="stylesheet" href="styles.css">
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="nav-placeholder">
@@ -15,11 +16,22 @@
           $("#nav-placeholder").load("nav.html");
         });
         </script>
-
-        <form method="get" action="http://images.google.com/images">
-            <input type="text" name="q" />
-            <input type="submit" value="Search Google Images" />
-        </form>
-
+        <div class="center">
+            <form method="get" action="http://images.google.com/images">
+                <input type="text" name="q" />
+                <input type="submit" value="Search Google Images" />
+            </form>
+        </div>
     </body>
+    <footer>
+        <div id="foot-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#foot-placeholder").load("footer.html");
+        });
+        </script>
+    </footer>
 </html>

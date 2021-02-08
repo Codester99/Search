@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google</title>
         <link rel="stylesheet" href="styles.css">
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
     <body>
-        <div id="nav-placeholder">
+        <header>
+            <div id="nav-p">
 
-        </div>
+            </div>
+            
+            <script>
+            $(function(){
+              $("#nav-p").load("nav.html");
+            });
+            </script>
+        </header>
         
-        <script>
-        $(function(){
-          $("#nav-placeholder").load("nav.html");
-        });
-        </script>
-        <div class="center">
+        <div class="adv">
+            <h1>Advanced Search</h1>
+            <br>
             <form action="https://google.com/search" name="f">
                 <div class="field">
                     <label for="field1">all these words:</label>
-                    <input type="text" class="textinput" id="field1" value=""  name="as_q">
+                    <input type="text" class="textinput" id="field1" value=""  name="as_q" autocomplete="off">
                 </div>
                 <br>
                 <div class="field">
                     <label for="field2">this exact word or phrase: </label>
-                    <input type="text" class="textinput" id="field2" value=""  name="as_epq">
+                    <input type="text" class="textinput" id="field2" value=""  name="as_epq" autocomplete="off">
                 </div>
                 <br>
                 <div class="field">
                     <label for="field3">any of this words: </label>
-                    <input type="text" class="textinput" id="field3" value=""  name="as_oq">
+                    <input type="text" class="textinput" id="field3" value=""  name="as_oq" autocomplete="off">
                 </div>
                 <br>
                 <div class="field">
                     <label for="field4">none of these words: </label>
-                    <input type="text" class="textinput" id="field4" value=""  name="as_eq">
+                    <input type="text" class="textinput" id="field4" value=""  name="as_eq" autocomplete="off">
                 </div>
-                <br>
-                <div class="field">
-                    <label for="field5">numbers ranging from: </label>
-                    <input type="text" class="textinput1" id="field5" value=""  name="as_nlo">
-                    <span class="seperator">to</span>
-                    <input type="text" class="textinput2" id="field5" value=""  name="as_nhi">
-                </div>
-                <input type="submit" value="advanced search">
+                <input class="adv_s" type="submit" value="advanced search">
             </form>
         </div>
-    </body>
-    <footer>
-        <div id="foot-placeholder">
+        <footer>
+            <div id="foot-p">
 
-        </div>
+            </div>
+            
+            <script>
+                $(function(){
+                $("#foot-p").load("footer.html");
+                });
+            </script>
+        </footer>
+    </body>
         
-        <script>
-        $(function(){
-          $("#foot-placeholder").load("footer.html");
-        });
-        </script>
-    </footer>
 </html>

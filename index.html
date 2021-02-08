@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Google</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Search</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href=  
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
-        <div id="nav-placeholder">
 
-        </div>
+            <header>
+                <div id="nav-p">
         
-        <script>
-        $(function(){
-          $("#nav-placeholder").load("nav.html");
-        });
-        </script>
+                </div>
+                
+                <script>
+                $(function(){
+                $("#nav-p").load("nav.html");
+                });
+                </script>
+            </header>
+            
+            <main class="center">
 
-        <div class="center">
-            <div class="logo">
-                <img src="logo.png">
-            </div>
-    
-            <div class="search">
-                <form id="search" action="https://google.com/search">
-                    <input id="search-bar" type="text" name="q" autocomplete="off">
-                </form>
-            </div>
-            <center>
-                <input id="g-search" value="Google Search" aria-label="Google Search" name="btnK" type="submit" form="search" data-ved="0ahUKEwifoOe6u9PuAhVqUt8KHRvDDqYQ4dUDCA0">
-                <input id="lucky" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit" form="search" data-ved="0ahUKEwifoOe6u9PuAhVqUt8KHRvDDqYQnRsIDg">
-            </center>
-        </div>
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+        
+                <div class="search">
+                    <form id="search" action="https://google.com/search">
+                        <input class="search-bar" type="text" name="q" autocomplete="off">
+                        <input class="g-search" value="Google Search" type="submit" form="search">
+                        <input value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" id="lucky" name="btnI" type="submit" data-ved="0ahUKEwiNm6S0jYLrAhXslnIEHYv2B30QnRsIDg"> 
+                    </form>
+                </div>
+            </main>
+
+            <footer>
+                <div id="foot-p">
+        
+                </div>
+                
+                <script>
+                    $(function(){
+                    $("#foot-p").load("footer.html");
+                    });
+                </script>
+            </footer>
+
     </body>
-    <footer class="footer">
-        <div id="foot-placeholder">
-
-        </div>
-        
-        <script>
-        $(function(){
-          $("#foot-placeholder").load("footer.html");
-        });
-        </script>
-    </footer>
 </html>

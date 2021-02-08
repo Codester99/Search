@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google</title>
         <link rel="stylesheet" href="styles.css">
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div id="nav-placeholder">
 
-        </div>
+        <header>
+            <div id="nav-p">
+
+            </div>
+            
+            <script>
+            $(function(){
+              $("#nav-p").load("nav.html");
+            });
+            </script>
+        </header>
         
-        <script>
-        $(function(){
-          $("#nav-placeholder").load("nav.html");
-        });
-        </script>
         <div class="center">
+
+            <div class="logo">
+                <img src="logo_img.png">
+            </div>
+
             <form method="get" action="http://images.google.com/images">
-                <input type="text" name="q" />
-                <input type="submit" value="Search Google Images" />
+                <input class="img-search" type="text" name="q" autocomplete="off"/>
+                <input class="s-images" type="submit" value="Search Google Images"/>
             </form>
         </div>
-    </body>
-    <footer>
-        <div id="foot-placeholder">
 
-        </div>
-        
-        <script>
-        $(function(){
-          $("#foot-placeholder").load("footer.html");
-        });
-        </script>
-    </footer>
+        <footer>
+            <div id="foot-p">
+
+            </div>
+            
+            <script>
+                $(function(){
+                $("#foot-p").load("footer.html");
+                });
+            </script>
+        </footer>
+    </body>
 </html>

@@ -2,7 +2,6 @@
 
 * {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
   }
 
 .search {
@@ -17,28 +16,27 @@
     text-align: center;
 }
 
-.center {
+.center { /* Centering search bar, logo, and buttons on the page */
     position: fixed;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-body {
+body { /* Trying to replicate google font */
     font-family: 'Roboto', sans-serif;
 }
 
-.adv {
+.adv { /* Putting the advanced search box in the top left corner */
     margin-left: 75px;
     margin-top: 20px;
 }
 
-input.adv_s {
+input.adv_s { /* Making the blue advanced search button */
     background-color: #4285F4;
     text-align: center;
     padding:10px;
     margin-top: 13px;
-    margin-left: 4px;
     border: none;
     color: white;
     transition-duration: 0.4s;
@@ -62,14 +60,14 @@ input.g-search, #lucky, .s-images { /* Got some styling hints from google homepa
     user-select: none;
 }
 
-input.g-search:hover, #lucky:hover, .s-images:hover {
+input.g-search:hover, #lucky:hover, .s-images:hover { /* Button highlight effect from the Google homepage */
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
     background-color: #f8f9fa;
     border: 1px solid #dadce0;
     color: #202124;
 }
 
-input.search-bar, .img-search {
+input.search-bar, .img-search { /* Tried to put the search logo in the search bar but wasn't able to finalize the design --> https://www.w3schools.com/css/css_form.asp */
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -155,7 +153,7 @@ margin-right: 10px;
 padding: 7px;
 }
 
-a:link {
+a:link { /* Simple link styling after Google homepage */
     color: black;
     text-decoration: none;
 }
